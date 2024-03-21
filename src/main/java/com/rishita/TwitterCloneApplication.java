@@ -1,4 +1,4 @@
-package com.rishita.twitterclone;
+package com.rishita;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
