@@ -3,6 +3,7 @@ package com.rishita.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +13,7 @@ public class Tweet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long Id;
+    private Long id;
 
     @ManyToOne
     private User user;
@@ -33,9 +34,11 @@ public class Tweet {
     @ManyToOne
     private Tweet replyFor;
 
-//    Created this property to know whether this is an actual tweet or a replied/retweeted tweet
+//    Created these properties to know whether this is an actual tweet or a replied/retweeted tweet
     private boolean isTweet;
     private boolean isReply;
+
+    private LocalDateTime createdAt;
 
 
 }
