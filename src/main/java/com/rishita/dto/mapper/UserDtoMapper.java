@@ -15,7 +15,7 @@ public class UserDtoMapper {
         userDto.setFullName(user.getFullName());
         userDto.setImage(user.getImage());
         userDto.setBackgroundImage(user.getBackgroundImage());
-        userDto.setBio(userDto.getBio());
+        userDto.setBio(user.getBio());
         userDto.setBirthDate(user.getBirthDate());
 
 //      here this toUserDtos will convert all the users (list of users) to user dtos
@@ -38,6 +38,7 @@ public class UserDtoMapper {
             userDto.setEmail(user.getEmail());
             userDto.setFullName(user.getFullName());
             userDto.setImage(user.getImage());
+//            userDto.setBio(user.getBio());
 
             userDtos.add(userDto);
         }
